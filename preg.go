@@ -79,7 +79,7 @@ func submatch(mlist [][]string) []string {
     // res[0] = regex
     for _,m := range mlist {
         for i := 1; i < len(m); i++ {
-            res = append(res, m[1])
+            res = append(res, m[i])
         }
     }
     return res
@@ -90,7 +90,7 @@ func submatchbyte(mlist [][][]byte) [][]byte {
 
     for _,m := range mlist {
         for i := 1; i < len(m); i++ {
-            res = append(res, m[1])
+            res = append(res, m[i])
         }
     }
     return res
